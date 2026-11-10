@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# 1. Compile the code
+make
+
+# 2. Run the executable and pass the domain list as stdin
+./project3.out << 'EOF'
+12
+
+CC[C@@H](OC)C1=CC(=O)C[C@@H]1O
+COC1=CC=CC(CNC(=O)C2=CC=C(N3CCCN(CC4=CC=CC=C4)C3=O)C=C2)=C1
+CC1=CC(O)=CC=C1OC1=CC(O)=C2C(=O)O[C@H](C)CC2=C1
+C[C@@H]1CC[C@@H]2[C@H](C=C[C@H]3[C@H](/C=C/[C@H](C)O)OC(=O)[C@@]23C)C1
+CC1=CC=C2OC(=O)C3=C4C(=C5C(OC6O[C@H](C)[C@H](O)[C@](C)(O)[C@H]6O)=CC=CC5=C3O)OC(=O)C1=C24
+CC[C@H](C)/C=C/C1=CC2=C(Cl)C(=O)[C@@]3(C)OC(=O)C(C(=O)[C@@H](C)[C@@H](C)O)=C3C2=CN1C/C=C(\C)CCC=C(C)C
+C1CCC2(CC1)O[C@H]1OC[C@H]3OC4(CCCCC4)O[C@H]3[C@H]1O2
+O=C(CCCCCN1C(=O)C2=CC=CC=C2C1=O)NCCC1=CC=CC=C1
+CCCCC[C@@H](O)[C@@H]1O[C@H]1[C@]1(OC)OCC2=C(OC[C@@H](O)C(C)(C)O)C=CC=C21
+C=C1C(=O)N[C@H](C)C(=O)N[C@@H](CCCN=C(N)N)C(=O)N[C@@H](C(=O)O)CC(=O)N[C@@H](CC2=CC=C(O)C=C2)C(=O)N[C@@H](/C=C/C(C)=C/[C@H](C)[C@@H](O)CC2=CC=CC=C2)[C@H](C)C(=O)N[C@@H](C(=O)O)CCC(=O)N1C
+CCOC(=O)C1=C(C2=CC=CC=C2)OC2=CC=C(O[C@H](C)C(=O)O)C=C12
+CCCCCCCCCCCCCCCCCCC(=O)O[C@H](COC(=O)CCCCCCCCCCCCCCCCCCC(C)C)COC(=O)CCCCCCCCCCCCCCCCCC(C)C
+
+
+EOF
